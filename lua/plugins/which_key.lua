@@ -8,5 +8,11 @@ return {
 				g = { "<cmd>LazyGit<cr>", "Open LazyGit ui" }
 			}
 		}, { prefix = "<leader>" })
+		wk.register({
+			t = {
+				name = "FileTree",
+				t = { "<cmd>NvimTreeToggle<cr>", "Open FileTree" }
+			}
+		})
 	end
 }

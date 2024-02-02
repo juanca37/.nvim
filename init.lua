@@ -1,3 +1,5 @@
+vim.g.loaded_netrw       = 1
+vim.g.loaded_netrwPlugin = 1
 vim.g.mapleader = " "
 vim.api.nvim_set_keymap('i', 'jk', '<Esc>', { noremap = true })
 vim.api.nvim_set_keymap('v', 'jk', '<Esc>', { noremap = true })
