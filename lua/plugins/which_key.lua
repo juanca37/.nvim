@@ -11,7 +11,10 @@ return {
 		wk.register({
 			t = {
 				name = "FileTree",
-				t = { "<cmd>NvimTreeToggle<cr>", "Open FileTree" }
+				t = { "<cmd>NvimTreeToggle<cr>", "Open FileTree" },
+				f = { "<cmd>NvimTreeFindFile<cr>", "Find file in tree" },
+				c = { "<cmd>NvimTreeCollapse<cr>", "Collapse Tree" }
+
 			}
 		})
 	end
