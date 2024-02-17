@@ -4,8 +4,9 @@ return {
 		local wk = require("which-key")
 		wk.register({
 			g = {
-				name = "lazygit",
-				g = { "<cmd>LazyGit<cr>", "Open LazyGit ui" }
+				name = "Git",
+				g = { "<cmd>LazyGit<cr>", "Open LazyGit ui" },
+        l = { "<cmd>Telescope git_commits<cr>", "Open git log in Telescope" }
 			}
 		}, { prefix = "<leader>" })
 		wk.register({
@@ -21,7 +22,8 @@ return {
         name = "Telescope",
         f = { "<cmd>Telescope find_files<cr>", "Find File" },
         r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
-        g = { "<cmd>Telescope git_files<cr>", "Open git files" }
+        g = { "<cmd>Telescope git_files<cr>", "Open git files" },
+        l = { "<cmd>Telescope live_grep<cr>", "Live grep" }
       }
     }, { prefix = "<leader>" })
 	end
