@@ -1,3 +1,8 @@
+vim.o.expandtab=true
+vim.o.tabstop=2
+vim.o.softtabspot=2
+vim.o.shiftwidth=2
+
 vim.g.loaded_netrw       = 1
 vim.g.loaded_netrwPlugin = 1
 vim.g.mapleader = " "
