@@ -1,13 +1,12 @@
-vim.o.expandtab=true
-vim.o.tabstop=2
-vim.o.softtabspot=2
-vim.o.shiftwidth=2
+vim.o.expandtab          = true
+vim.o.tabstop            = 2
+vim.o.softtabspot        = 2
+vim.o.shiftwidth         = 2
 
 vim.g.loaded_netrw       = 1
 vim.g.loaded_netrwPlugin = 1
-vim.g.mapleader = " "
+vim.g.mapleader          = " "
 vim.api.nvim_set_keymap('i', 'jk', '<Esc>', { noremap = true })
-vim.api.nvim_set_keymap('v', 'jk', '<Esc>', { noremap = true })
 vim.o.number = true
 vim.o.relativenumber = true
 
