@@ -11,5 +11,6 @@ vim.o.number = true
 vim.o.relativenumber = true
 
 vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[colorscheme gruvbox]])
+vim.cmd([[let g:gruvbox_material_background = 'soft']])
+vim.cmd([[colorscheme gruvbox-material]])
 vim.opt.mouse = ""
