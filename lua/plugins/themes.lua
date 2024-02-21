@@ -5,6 +5,7 @@ return {
     priority = 1000
   },
   {
-    "sainnhe/gruvbox-material"
+    "sainnhe/gruvbox-material",
+    priority = 1000
   }
 }
