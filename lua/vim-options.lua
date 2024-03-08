@@ -16,3 +16,5 @@ vim.cmd([[colorscheme gruvbox-material]])
 vim.opt.mouse = ""
 
 vim.o.splitright = true
+
+vim.g.lazygit_config_file_path = "~/.config/lazygit/config.yml"
