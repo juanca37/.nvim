@@ -33,5 +33,17 @@ return {
         S = { "<cmd>lua require('spectre').open_file_search({select_word=true})<cr>", "Search on current file" },
       },
     }, { prefix = "<leader>" })
+    wk.register({
+      b = {
+        name = "Before, previous edits",
+        h = { "<cmd>lua require('before').jump_to_last_edit()<cr>", "Jump to last edit" },
+
+        l = { "<cmd>lua require('before').jump_to_next_edit()<cr>", "Jump to next edit" },
+        e = {
+          "<cmd>lua require('before').show_edits(require('telescope.themes').get_dropdown())<cr>",
+          "Show edits in telescope",
+        },
+      },
+    }, { prefix = "<leader>" })
   end,
 }
