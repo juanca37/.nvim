@@ -1,11 +1,17 @@
 return {
-	'nvim-treesitter/nvim-treesitter',
-	build = ':TSUpdate',
+	"nvim-treesitter/nvim-treesitter",
+	build = ":TSUpdate",
 	config = function()
-		require('nvim-treesitter.configs').setup({
+		require("nvim-treesitter.configs").setup({
 			ensure_installed = {
-				'jsonc'
-			}
+				"jsonc",
+				"c",
+				"lua",
+				"vim",
+				"vimdoc",
+				"query",
+				"python",
+			},
 		})
-	end
+	end,
 }
