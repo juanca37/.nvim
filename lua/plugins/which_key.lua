@@ -24,6 +24,7 @@ return {
 				r = { "<cmd>Telescope oldfiles<cr>", "Open Recent File" },
 				g = { "<cmd>Telescope git_files<cr>", "Open git files" },
 				l = { "<cmd>Telescope live_grep<cr>", "Live grep" },
+        u = { "<cmd>Telescope undo<cr>", "Undo tree" }
 			},
 		}, { prefix = "<leader>" })
 		wk.register({

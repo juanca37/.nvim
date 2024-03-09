@@ -21,3 +21,5 @@ vim.diagnostic.config({
 vim.o.splitright = true
 
 vim.g.lazygit_config_file_path = "~/.config/lazygit/config.yml"
+
+vim.loader.enable()
