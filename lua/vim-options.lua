@@ -13,10 +13,11 @@ vim.o.relativenumber = true
 vim.o.background = "dark" -- or "light" for light mode
 vim.cmd([[let g:gruvbox_material_background = 'soft']])
 vim.cmd([[colorscheme gruvbox-material]])
+vim.cmd([[hi NvimTreeNormal guibg=None]])
 vim.opt.mouse = ""
 
 vim.diagnostic.config({
-  virtual_text = false,
+	virtual_text = false,
 })
 vim.o.splitright = true
 

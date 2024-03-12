@@ -6,16 +6,32 @@ return {
 		"nvim-tree/nvim-web-devicons",
 	},
 	config = function()
-		local HEIGHT_RATIO = 0.8 -- You can change this
+		local HEIGHT_RATIO = 0.3 -- You can change this
 		local WIDTH_RATIO = 0.5 -- You can change this too
+		local function my_on_attach(bufnr)
+			local api = require("nvim-tree.api")
+
+			local function opts(desc)
+				return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+			end
+
+			-- default mappings
+			api.config.mappings.default_on_attach(bufnr)
+
+			-- custom mappings
+			vim.keymap.set("n", "<leader>", api.node.open.edit, opts("Open"))
+		end
 		require("nvim-tree").setup({
 			actions = {
 				open_file = {
 					quit_on_open = true,
 				},
 			},
+			git = {
+				enable = true,
+			},
+			on_attach = my_on_attach,
 			view = {
-				relativenumber = true,
 				float = {
 					enable = true,
 					open_win_config = function()
