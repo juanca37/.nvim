@@ -9,7 +9,7 @@ return {
 
     -- Assuming you have guard-collection
     ft("lua"):fmt("lsp"):append("stylua")
-    ft("python"):fmt("black"):append("isort"):lint("pylint")
+    ft("python"):fmt("black"):append("isort")
     -- Call setup() LAST!
     require("guard").setup({
       -- Choose to format on every write to a buffer
