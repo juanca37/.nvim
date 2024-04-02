@@ -58,5 +58,15 @@ return {
         },
       },
     }, { prefix = "<leader>", expr = true })
+    wk.register({
+      t = {
+        name = "Vitest",
+        t = { "<cmd>:TestNearest<CR>", "Test nearest" },
+        T = { "<cmd>:TestFile<CR>", "Test whole file" },
+        a = { "<cmd>:TestSuite<CR>", "Test whole suite" },
+        l = { "<cmd>:TestLast<CR>", "Test last" },
+        g = { "<cmd>:TestVisit<CR>", "Visit last file where you run tests" },
+      },
+    }, { prefix = "<leader>" })
   end,
 }
