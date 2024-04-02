@@ -11,9 +11,6 @@ vim.o.number = true
 vim.o.relativenumber = true
 
 vim.o.background = "dark" -- or "light" for light mode
-vim.cmd([[let g:gruvbox_material_background = 'soft']])
-vim.cmd([[colorscheme gruvbox-material]])
-vim.cmd([[hi NvimTreeNormal guibg=None]])
 vim.opt.mouse = ""
 
 vim.diagnostic.config({
@@ -22,5 +19,9 @@ vim.diagnostic.config({
 vim.o.splitright = true
 
 vim.g.lazygit_config_file_path = "~/.config/lazygit/config.yml"
-
+-- Vim tmux navigation
+vim.keymap.set("n", "<c-j>", ":wincmd j<CR>")
+vim.keymap.set("n", "<c-k>", ":wincmd k<CR>")
+vim.keymap.set("n", "<c-h>", ":wincmd h<CR>")
+vim.keymap.set("n", "<c-l>", ":wincmd l<CR>")
 vim.loader.enable()
