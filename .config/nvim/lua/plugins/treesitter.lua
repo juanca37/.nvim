@@ -11,6 +11,8 @@ return {
 				"vimdoc",
 				"query",
 				"python",
+				"markdown",
+				"markdown_inline",
 			},
 		})
 	end,
